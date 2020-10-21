@@ -32,7 +32,7 @@ That makes it a perfect addition to the Pi for integrating simple sensors like p
 Let's check the datasheet of the MCP3008 chip.
 On the first page in the lower right corner there's a pinout diagram showing the names of the pins:
  
- ![MCP3008](resources/images/MCP3008 Diagram.png)
+ ![MCP3008](resources/images/MCP3008 Diagram.png?raw=true)
 
 
 # Installing required packages
