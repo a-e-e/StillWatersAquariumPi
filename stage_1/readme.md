@@ -29,6 +29,8 @@ The MCP3008 acts like a "bridge" between digital and analog.
 It has 8 analog inputs and the Pi can query it using 4 digital pins. 
 That makes it a perfect addition to the Pi for integrating simple sensors like photocells, FSRs or potentiometers, thermistors, etc.!
 
+### MCP3008 wiring
+
 Let's check the datasheet of the MCP3008 chip.
 On the first page in the lower right corner there's a pinout diagram showing the names of the pins:
  
@@ -36,7 +38,7 @@ On the first page in the lower right corner there's a pinout diagram showing the
 
 In order to read analog data we need to use the following pins:
 
-VDD (power) and DGND (digital ground) to power the MCP3008 chip. We also need four "SPI" data pins: DOUT (Data Out from MCP3008), CLK (Clock pin), DIN (Data In from Raspberry Pi),  and /CS (Chip Select).  Finally of course, a source of analog data. We'll be using the basic 10k trim pot. 
+VDD (power) and DGND (digital ground) to power the MCP3008 chip. We also need four "SPI" data pins: DOUT (Data Out from MCP3008), CLK (Clock pin), DIN (Data In from Raspberry Pi),  and /CS (Chip Select). 
 
 The MCP3008 has a few more pins we need to connect: AGND (analog ground, used sometimes in precision circuitry, which this is not) connects to GND, and VREF (analog voltage reference, used for changing the "scale" - we want the full scale, so tie it to 3.3V).
 
@@ -51,6 +53,7 @@ MCP3008 DIN -> MOSI (white)
 MCP3008 CS -> #22 (green)
 MCP3008 DGND -> GND (black)
 
+### Water level sensor wiring
 Next connect up the water level sensor.
 
 # Installing required packages
