@@ -34,6 +34,24 @@ On the first page in the lower right corner there's a pinout diagram showing the
  
  <img src="resources/images/MCP3008Diagram.png" width="120" height="100">
 
+In order to read analog data we need to use the following pins:
+
+VDD (power) and DGND (digital ground) to power the MCP3008 chip. We also need four "SPI" data pins: DOUT (Data Out from MCP3008), CLK (Clock pin), DIN (Data In from Raspberry Pi),  and /CS (Chip Select).  Finally of course, a source of analog data. We'll be using the basic 10k trim pot. 
+
+The MCP3008 has a few more pins we need to connect: AGND (analog ground, used sometimes in precision circuitry, which this is not) connects to GND, and VREF (analog voltage reference, used for changing the "scale" - we want the full scale, so tie it to 3.3V).
+
+Below is a wiring diagram. Connect the 3.3V cobbler pin to the left + rail and the GND pin to the right - rail. Connect the following pins for the MCP chip
+
+MCP3008 VDD -> 3.3V (red)
+MCP3008 VREF -> 3.3V (red)
+MCP3008 AGND -> GND (black)
+MCP3008 CLK -> SCLK (yellow)
+MCP3008 DOUT -> MISO (purple)
+MCP3008 DIN -> MOSI (white)
+MCP3008 CS -> #22 (green)
+MCP3008 DGND -> GND (black)
+
+Next connect up the water level sensor.
 
 # Installing required packages
 
