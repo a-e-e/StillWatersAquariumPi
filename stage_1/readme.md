@@ -41,3 +41,21 @@ Assuming a new raspberry pi,
 Enable SPI
 
 `sudo pip 3 install adafruit-circuitpython-mp3xxx`
+
+Create a "Code" folder on the raspberry 
+
+`mkdir Code`
+
+Change directory into the newly created Code folder
+
+`cd Code`
+
+Clone repository
+
+`git clone https://github.com/simonyjung/StillWatersAquariumPi.git`
+
+# Running code
+
+- Open Thornny Python IDE
+- Load -> Code/StillWatersAquariumPi/stage_1/print_water_level.py
+- click 'Run'
