@@ -58,6 +58,8 @@ Next connect up the water level sensor.
 
 # Installing required packages
 
+Assuming a new raspberry pi:
+
 First, enable SPI by following the directions in the link below
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-spi
 
