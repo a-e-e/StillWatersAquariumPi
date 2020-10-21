@@ -28,3 +28,16 @@ Let's check the datasheet of the MCP3008 chip.
  On the first page in the lower right corner there's a pinout diagram showing the names of the pins:
  
  ![MCP3008](https://learn.adafruit.com/assets/1222.png)
+
+
+# Installing required packages
+
+Assuming a new raspberry pi,
+
+`sudo apt-get update -y`
+
+`sudo apt-get upgrade -y`
+
+Enable SPI
+
+`sudo pip 3 install adafruit-circuitpython-mp3xxx`
