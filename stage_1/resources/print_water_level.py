@@ -1,0 +1,23 @@
+import busio
+import board
+import digitalio
+import time
+import adafruit_mcp3xxx.mxp3008 as MCP
+from adatfruit_mcp3xxx.analog_in import AnalogIn
+
+# create the spi bus
+spi = busio.SPI(clock=board.SCK, MISO=board.MISO, MOSI=board.MOSI)
+
+# create the cs (chip select)
+cs = digitalio.DigitalInOut(board.D5)
+
+# create the mp object
+mcp = MCP.MP3008(spi, cs)
+
+# create an analog input channel on pin 0
+chan = AnalogIn(mcp, MCP.P0)
+
+while True:
+    print('Raw ADC Value: ', chan.value)
+    print('ADC Voltage: ' + str(chan.voltage) + 'V')
+    time.sleep(.5)
