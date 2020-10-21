@@ -3,7 +3,7 @@ import board
 import digitalio
 import time
 import adafruit_mcp3xxx.mcp3008 as MCP
-from adatfruit_mcp3xxx.analog_in import AnalogIn
+from adafruit_mcp3xxx.analog_in import AnalogIn
 
 # create the spi bus
 spi = busio.SPI(clock=board.SCK, MISO=board.MISO, MOSI=board.MOSI)
