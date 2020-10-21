@@ -4,7 +4,8 @@ Directions borrowed heavily from
 
 https://learn.adafruit.com/reading-a-analog-in-and-controlling-audio-volume-with-the-raspberry-pi/connecting-the-cobbler-to-a-mcp3008
 
-# Requirements
+# To get started
+We will need the following:
 - Raspberry pi 4
 - 8in eTape
 https://www.adafruit.com/product/463
@@ -26,4 +27,4 @@ That makes it a perfect addition to the Pi for integrating simple sensors like p
 Let's check the datasheet of the MCP3008 chip.
  On the first page in the lower right corner there's a pinout diagram showing the names of the pins:
  
- ![MCP3008](https://learn.adafruit.com/assets/1222)
+ ![MCP3008](https://learn.adafruit.com/assets/1222.png)
