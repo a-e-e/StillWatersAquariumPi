@@ -17,7 +17,21 @@ mcp = MCP.MCP3008(spi, cs)
 # create an analog input channel on pin 0
 chan = AnalogIn(mcp, MCP.P0)
 
+
+def get_water_level_inches(voltage):
+    """
+    v-b / m
+    b = 2.49
+    m = -.097
+    :param voltage:
+    :return:
+    """
+    water_level_inches = (voltage - 2.49) / -0.0978
+    return water_level_inches
+
+
 while True:
     print('Raw ADC Value: ', chan.value)
     print('ADC Voltage: ' + str(chan.voltage) + 'V')
+    print('Water Level: ' + str(get_water_level_inches(chan.voltage)))
     time.sleep(.5)
