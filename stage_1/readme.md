@@ -44,14 +44,14 @@ The MCP3008 has a few more pins we need to connect: AGND (analog ground, used so
 
 Below is a wiring diagram. Connect the 3.3V cobbler pin to the left + rail and the GND pin to the right - rail. Connect the following pins for the MCP chip
 
-MCP3008 VDD -> 3.3V (red)
-MCP3008 VREF -> 3.3V (red)
-MCP3008 AGND -> GND (black)
-MCP3008 CLK -> SCLK (yellow)
-MCP3008 DOUT -> MISO (purple)
-MCP3008 DIN -> MOSI (white)
-MCP3008 CS -> #22 (green)
-MCP3008 DGND -> GND (black)
+MCP3008 VDD -> 3.3V (red)  
+MCP3008 VREF -> 3.3V (red)  
+MCP3008 AGND -> GND (black)  
+MCP3008 CLK -> SCLK (yellow)  
+MCP3008 DOUT -> MISO (purple)  
+MCP3008 DIN -> MOSI (white)  
+MCP3008 CS -> #22 (green)  
+MCP3008 DGND -> GND (black)  
 
 <img src="resources/images/mcp3008wiring.png">
 <img src="resources/images/mcp3008wiringlive.jpeg">
@@ -72,28 +72,23 @@ Note that several female-male wires are connected together to create an extensio
 
 Assuming a new raspberry pi:
 
-First, enable SPI by following the directions in the link below
+First, enable SPI by following the directions in the link below  
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-spi
 
-In terminal, copy and paste the following commands
+In terminal, copy and paste the following commands  
 https://magpi.raspberrypi.org/articles/terminal-help
 
-`sudo apt-get update -y`
+`sudo apt-get update -y`  
+`sudo apt-get upgrade -y`  
+`sudo pip 3 install adafruit-circuitpython-mp3xxx`  
 
-`sudo apt-get upgrade -y`
-
-`sudo pip 3 install adafruit-circuitpython-mp3xxx`
-
-Create a "Code" folder on the raspberry 
-
+Create a "Code" folder on the raspberry  
 `mkdir Code`
 
-Change directory into the newly created Code folder
-
+Change directory into the newly created Code folder  
 `cd Code`
 
-Clone repository
-
+Clone repository  
 `git clone https://github.com/simonyjung/StillWatersAquariumPi.git`
 
 # Running code
