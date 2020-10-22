@@ -54,6 +54,7 @@ MCP3008 CS -> #22 (green)
 MCP3008 DGND -> GND (black)
 
 <img src="resources/images/mcp3008wiring.png">
+<img src="resources/images/mcp3008wiringlive.jpeg">
 
 ### Water level sensor wiring
 Next connect up the water level sensor. The etape has 4 pins, but we will only be using the middle two. As the water level rises, more pressure is exerted on the sensor, causing the resistance of the sensor to decrease.
@@ -61,6 +62,9 @@ Next connect up the water level sensor. The etape has 4 pins, but we will only b
 The water level sensor comes with a 560 ohm resistor, and a 4 pin connector. Put aside the 4 pin connector for now. That will be useful when we solder components to create a more permanent system.
 
 <img src="resources/images/etapewiring.png">
+<img src="resources/images/etapewiringlive.jpeg">
+
+Note that several female-male wires are connected together to create an extension.
 
 # Installing required packages
 
