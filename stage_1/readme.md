@@ -79,7 +79,7 @@ https://magpi.raspberrypi.org/articles/terminal-help
 
 `sudo apt-get update -y`  
 `sudo apt-get upgrade -y`  
-`sudo pip3 install adafruit-circuitpython-mp3xxx`  
+`sudo pip3 install adafruit-circuitpython-mcp3xxx`  
 
 Create a "Code" folder on the raspberry  
 `mkdir Code`
