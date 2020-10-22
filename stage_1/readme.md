@@ -57,7 +57,9 @@ MCP3008 DGND -> GND (black)
 <img src="resources/images/mcp3008wiringlive.jpeg">
 
 ### Water level sensor wiring
-Next connect up the water level sensor. The etape has 4 pins, but we will only be using the middle two. As the water level rises, more pressure is exerted on the sensor, causing the resistance of the sensor to decrease.
+Next, we are connecting the water level sensor. The etape sensor has 4 pins, but we will only be using the middle two. 
+
+The eTape sensor's envelope is compressed by hydrostatic pressure of the fluid in which it is immersed resulting in a change in resistance which corresponds to the distance from the top of the sensor to the fluid surface. The eTape sensor provides a resistive output that is inversely proportional to the level of the liquid: the lower the liquid level, the higher the output resistance; the higher the liquid level, the lower the output resistance. We will measure the resulting voltage drop with the ADC.
 
 The water level sensor comes with a 560 ohm resistor, and a 4 pin connector. Put aside the 4 pin connector for now. That will be useful when we solder components to create a more permanent system.
 
