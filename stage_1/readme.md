@@ -74,6 +74,7 @@ First, enable SPI by following the directions in the link below
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-spi
 
 In terminal, copy and paste the following commands
+https://magpi.raspberrypi.org/articles/terminal-help
 
 `sudo apt-get update -y`
 
@@ -97,4 +98,4 @@ Clone repository
 
 - Open Thornny Python IDE
 - Load -> Code/StillWatersAquariumPi/stage_1/print_water_level.py
-- click 'Run'
+- Click 'Run'
