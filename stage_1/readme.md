@@ -1,7 +1,6 @@
 # Stage 1: Print water level on screen using raspberry pi and eTape sensor
 
-Directions borrowed heavily from 
-
+Directions borrowed heavily from  
 https://learn.adafruit.com/reading-a-analog-in-and-controlling-audio-volume-with-the-raspberry-pi/connecting-the-cobbler-to-a-mcp3008
 
 # To get started
