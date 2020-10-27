@@ -1,7 +1,6 @@
 # Stage 1: Print water level on screen using raspberry pi and eTape sensor
 
-Directions borrowed heavily from 
-
+Directions borrowed heavily from  
 https://learn.adafruit.com/reading-a-analog-in-and-controlling-audio-volume-with-the-raspberry-pi/connecting-the-cobbler-to-a-mcp3008
 
 # To get started
@@ -44,20 +43,22 @@ The MCP3008 has a few more pins we need to connect: AGND (analog ground, used so
 
 Below is a wiring diagram. Connect the 3.3V cobbler pin to the left + rail and the GND pin to the right - rail. Connect the following pins for the MCP chip
 
-MCP3008 VDD -> 3.3V (red)
-MCP3008 VREF -> 3.3V (red)
-MCP3008 AGND -> GND (black)
-MCP3008 CLK -> SCLK (yellow)
-MCP3008 DOUT -> MISO (purple)
-MCP3008 DIN -> MOSI (white)
-MCP3008 CS -> #22 (green)
-MCP3008 DGND -> GND (black)
+MCP3008 VDD -> 3.3V (red)  
+MCP3008 VREF -> 3.3V (red)  
+MCP3008 AGND -> GND (black)  
+MCP3008 CLK -> SCLK (yellow)  
+MCP3008 DOUT -> MISO (purple)  
+MCP3008 DIN -> MOSI (white)  
+MCP3008 CS -> #22 (green)  
+MCP3008 DGND -> GND (black)  
 
 <img src="resources/images/mcp3008wiring.png">
 <img src="resources/images/mcp3008wiringlive.jpeg">
 
 ### Water level sensor wiring
-Next connect up the water level sensor. The etape has 4 pins, but we will only be using the middle two. As the water level rises, more pressure is exerted on the sensor, causing the resistance of the sensor to decrease.
+Next, we will connect the eTape water level sensor. The eTape sensor has 4 pins, but we will only be using the middle two. 
+
+The eTape sensor's envelope is compressed by hydrostatic pressure of the fluid in which it is immersed resulting in a change in resistance which corresponds to the distance from the top of the sensor to the fluid surface. The eTape sensor provides a resistive output that is inversely proportional to the level of the liquid: the lower the liquid level, the higher the output resistance; the higher the liquid level, the lower the output resistance. We will measure the resulting voltage drop with the MCP3008.
 
 The water level sensor comes with a 560 ohm resistor, and a 4 pin connector. Put aside the 4 pin connector for now. That will be useful when we solder components to create a more permanent system.
 
@@ -70,28 +71,23 @@ Note that several female-male wires are connected together to create an extensio
 
 Assuming a new raspberry pi:
 
-First, enable SPI by following the directions in the link below
+First, enable SPI by following the directions in the link below  
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-spi
 
-In terminal, copy and paste the following commands
+In terminal, copy and paste the following commands  
 https://magpi.raspberrypi.org/articles/terminal-help
 
-`sudo apt-get update -y`
+`sudo apt-get update -y`  
+`sudo apt-get upgrade -y`  
+`sudo pip3 install adafruit-circuitpython-mcp3xxx`  
 
-`sudo apt-get upgrade -y`
-
-`sudo pip 3 install adafruit-circuitpython-mp3xxx`
-
-Create a "Code" folder on the raspberry 
-
+Create a "Code" folder on the raspberry  
 `mkdir Code`
 
-Change directory into the newly created Code folder
-
+Change directory into the newly created Code folder  
 `cd Code`
 
-Clone repository
-
+Clone repository  
 `git clone https://github.com/simonyjung/StillWatersAquariumPi.git`
 
 # Running code
