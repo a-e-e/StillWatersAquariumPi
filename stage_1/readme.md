@@ -89,10 +89,10 @@ Change directory into the newly created Code folder
 Clone repository  
 `git clone https://github.com/simonyjung/StillWatersAquariumPi.git`
 
-Change directory into newly cloned repository
+Change directory into newly cloned repository  
 `cd StillWatersAquariumPi`
 
-Install dependencies
+Install dependencies. 
 `pip3 install -r requirements.txt`
 
 # Running code
