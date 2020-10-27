@@ -79,7 +79,6 @@ https://magpi.raspberrypi.org/articles/terminal-help
 
 `sudo apt-get update -y`  
 `sudo apt-get upgrade -y`  
-`sudo pip3 install adafruit-circuitpython-mcp3xxx`  
 
 Create a "Code" folder on the raspberry  
 `mkdir Code`
@@ -89,6 +88,12 @@ Change directory into the newly created Code folder
 
 Clone repository  
 `git clone https://github.com/simonyjung/StillWatersAquariumPi.git`
+
+Change directory into newly cloned repository
+`cd StillWatersAquariumPi`
+
+Install dependencies
+`pip3 install -r requirements.txt`
 
 # Running code
 
