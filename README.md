@@ -4,4 +4,4 @@
 Read and print water level using eTape water level sensor and Raspberry Pi
 
 ## Stage 2
-TBD
+Read and print water temperature
