@@ -101,3 +101,15 @@ Install dependencies.
 - Open Thornny Python IDE
 - Load -> Code/StillWatersAquariumPi/stage_1/print_water_level.py
 - Click 'Run'
+
+
+# Troubleshooting
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'board' has no attribute 'SCK'
+```
+- A wrong 'board' package has been installed. Force a reinstall of Blinka library.
+```sudo python3 -m pip install --upgrade --force-reinstall adafruit-blinka Adafruit-PlatformDetect```
+
+ 
