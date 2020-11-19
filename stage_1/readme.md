@@ -79,6 +79,7 @@ https://magpi.raspberrypi.org/articles/terminal-help
 
 `sudo apt-get update -y`  
 `sudo apt-get upgrade -y`  
+(This step will take a while)
 
 Create a "Code" folder on the raspberry  
 `mkdir Code`
