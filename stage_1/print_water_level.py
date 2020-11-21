@@ -7,7 +7,7 @@ from adafruit_mcp3xxx.analog_in import AnalogIn
 
 
 VOLTAGE_AT_2_INCH = 2.41
-VOLTAGE_AT_6_INCH = 2.09
+VOLTAGE_AT_6_INCH = 2.04
 
 
 def get_water_level_inches(voltage):
