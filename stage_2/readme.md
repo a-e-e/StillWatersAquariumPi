@@ -21,9 +21,9 @@ Unlike the analog water level sensor, the DS18B20 has a built in Analog to Digit
 - `sudo pip3 install w1thermsensor`
 
 # Wiring
-
- - Blue (GND), Orange (5V), Yellow (Data)
-
+The temperature sensor has 3 wires: Blue (GND), Orange (5V), Yellow (Data).
+- Find matching color male to female wires and use electrical tape to attachem them to the end of the sensor wires.
+<img src="resources/images/IMG_3020.jpeg">
 
 # Running code
 
