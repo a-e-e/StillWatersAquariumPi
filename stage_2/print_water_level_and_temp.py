@@ -13,9 +13,21 @@ VOLTAGE_AT_6_INCH = 2.04
 
 def get_water_level_inches(voltage):
     """
-    v-b / m
-    b = 2.49
-    m = -.097
+    observational approximation assuming voltage to water level relationship is linear
+    use two reference points to find slope and y-intercept of a line
+    y = mx + b
+    Set VOLTAGE_AT_2_IN and VOLTAGE_AT_6_INCH global variables
+
+    y = Voltage
+    x = water level
+    m = slope
+
+    VOLTAGE_AT_2_INCH = m(2) + b
+    VOLTAGE_AT_6_INCH = m(6) + b
+    VOLTAGE_AT_2_INCH - m(2) = VOLTAGE_AT_6_INCH - m(6)
+    m(4) = 4m = VOLTAGE_AT_6_INCH - VOLTAGE_AT_2_INCH
+    m = (VOLTAGE_AT_6_INCH - VOLTAGE_AT_2_INCH) / 4
+
     :param voltage:
     :return:
     """
@@ -31,7 +43,7 @@ def celsius_to_fahrenheit(celsius):
 
 def main():
     """
-    Print the water level every .5 seconds
+    Print the water level and temperature every second
     :return:
     """
     # create the spi bus
@@ -52,8 +64,8 @@ def main():
     while True:
         temperature = temp_sensor.get_temperature()
         print(f"The temperature is {temperature} C, {celsius_to_fahrenheit(temperature)} F")
-        print('ADC Voltage: ' + str(round(water_level_sensor.voltage, 2)) + 'V')
-        print('Water Level: ' + str(get_water_level_inches(water_level_sensor.voltage)) + ' inches')
+        print(f"ADC Voltage: {round(water_level_sensor.voltage, 2)}V")
+        print(f"Water Level: {get_water_level_inches(water_level_sensor.voltage)} inches")
         time.sleep(1)
 
 

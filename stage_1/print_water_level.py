@@ -12,9 +12,21 @@ VOLTAGE_AT_6_INCH = 2.04
 
 def get_water_level_inches(voltage):
     """
-    v-b / m
-    b = 2.49
-    m = -.097
+    observational approximation assuming voltage to water level relationship is linear
+    use two reference points to find slope and y-intercept of a line
+    y = mx + b
+    Set VOLTAGE_AT_2_IN and VOLTAGE_AT_6_INCH global variables
+
+    y = Voltage
+    x = water level
+    m = slope
+
+    VOLTAGE_AT_2_INCH = m(2) + b
+    VOLTAGE_AT_6_INCH = m(6) + b
+    VOLTAGE_AT_2_INCH - m(2) = VOLTAGE_AT_6_INCH - m(6)
+    m(4) = 4m = VOLTAGE_AT_6_INCH - VOLTAGE_AT_2_INCH
+    m = (VOLTAGE_AT_6_INCH - VOLTAGE_AT_2_INCH) / 4
+
     :param voltage:
     :return:
     """
