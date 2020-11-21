@@ -103,6 +103,11 @@ Install dependencies.
 - Click 'Run'
 
 
+# Calibration
+- Note sensor voltage at 2 in and 6 in
+- Input voltage in lines 9 & 10 of print_water_level.py under `VOLTAGE_AT_2_INCH` and `VOLTAGE_AT_6_INCH`
+
+
 # Troubleshooting
 ```
 Traceback (most recent call last):
