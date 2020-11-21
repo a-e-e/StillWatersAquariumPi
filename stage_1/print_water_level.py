@@ -6,6 +6,10 @@ import adafruit_mcp3xxx.mcp3008 as MCP
 from adafruit_mcp3xxx.analog_in import AnalogIn
 
 
+VOLTAGE_AT_2_INCH = 2.41
+VOLTAGE_AT_6_INCH = 2.09
+
+
 def get_water_level_inches(voltage):
     """
     v-b / m
@@ -14,8 +18,8 @@ def get_water_level_inches(voltage):
     :param voltage:
     :return:
     """
-    slope = -0.0978
-    y_intercept = 2.49
+    slope = (VOLTAGE_AT_6_INCH - VOLTAGE_AT_2_INCH) / 4.0
+    y_intercept = VOLTAGE_AT_6_INCH - ( 6 * slope)
     water_level_inches = (voltage - y_intercept) / slope
     return round(water_level_inches, 2)
 
