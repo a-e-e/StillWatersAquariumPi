@@ -22,14 +22,15 @@ Unlike the analog water level sensor, the DS18B20 has a built in Analog to Digit
 
 # Wiring
 The temperature sensor has 3 wires: Blue (GND), Orange (3.3V), Yellow (Data).
-- Find matching color male to female wires and use electrical tape to attachem them to the end of the sensor wires.
+- Find matching color male to female wires. They will be used to create breadboard friendly connectors for the sensors exposed wires.
+- Carefully insert the copper threads into the wires and use electrical tape to secure.
 <img src="resources/images/IMG_3020.jpeg" height=400>
 <img src="resources/images/IMG_3024.jpeg" height=400>
 <img src="resources/images/IMG_3025.jpeg" height=400>
 - Connect the blue wire to GND
 - Connect the red wire to 3.3V
 - Connect the yellow wire to GPIO 4 with the 4.7k ohm resistor inbetween it that is connected to 3.3V
-
+<img src="resources/images/wiring.png" height=400>
 # Running code
 
 - Open Thornny Python IDE
