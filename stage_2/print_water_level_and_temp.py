@@ -25,6 +25,10 @@ def get_water_level_inches(voltage):
     return round(water_level_inches, 2)
 
 
+def celsius_to_fahrenheit(celsius):
+    return celsius * 1.8 + 32
+
+
 def main():
     """
     Print the water level every .5 seconds
@@ -47,7 +51,7 @@ def main():
 
     while True:
         temperature = temp_sensor.get_temperature()
-        print("The temperature is %s celsius" % temperature)
+        print(f"The temperature is {temperature} C, {celsius_to_fahrenheit(temperature)} F")
         print('ADC Voltage: ' + str(round(water_level_sensor.voltage, 2)) + 'V')
         print('Water Level: ' + str(get_water_level_inches(water_level_sensor.voltage)) + ' inches')
         time.sleep(1)
