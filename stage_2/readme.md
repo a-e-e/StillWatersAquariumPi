@@ -43,3 +43,4 @@ The temperature sensor has 3 wires: Blue (GND), Orange (3.3V), Yellow (Data).
 - Open Thornny Python IDE
 - Load -> Code/StillWatersAquariumPi/stage_2/print_water_level_and_temperature.py
 - Click 'Run'
+<img src="resources/images/output_example.pnt" height=400>
