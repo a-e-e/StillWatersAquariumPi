@@ -28,10 +28,10 @@ The temperature sensor has 3 wires: Blue (GND), Orange (3.3V), Yellow (Data).
 <img src="resources/images/IMG_3020.jpeg" height=400>
 <img src="resources/images/IMG_3024.jpeg" height=400>
 <img src="resources/images/IMG_3025.jpeg" height=400>
-- Connect the blue wire to GND
-- Connect the red wire to 3.3V
-- Connect a breadboard row with the yellow wire and GPIO 4.
-- Connect the 4.7k ohm resistor to the above breadboard row and 3.3V. This is called a pull up resistor and is used to ensure that the data pin is always on.
+- Connect the blue wire to GND.  
+- Connect the red wire to 3.3V.  
+- Connect a breadboard row with the yellow wire and GPIO 4.  
+- Connect the 4.7k ohm resistor to the above breadboard row and 3.3V. This is called a pull up resistor and is used to ensure that the data pin is always on.  
 
 <img src="resources/images/wiring.png" height=400>
 <img src="resources/images/wiring.jpeg" height=400>
