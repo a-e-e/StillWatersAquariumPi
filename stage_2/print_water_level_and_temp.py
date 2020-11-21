@@ -66,6 +66,7 @@ def main():
         print(f"The temperature is {temperature} C, {celsius_to_fahrenheit(temperature)} F")
         print(f"ADC Voltage: {round(water_level_sensor.voltage, 2)}V")
         print(f"Water Level: {get_water_level_inches(water_level_sensor.voltage)} inches")
+        print("\n")
         time.sleep(1)
 
 
