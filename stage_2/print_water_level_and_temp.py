@@ -26,7 +26,7 @@ def get_water_level_inches(voltage):
 
 
 def celsius_to_fahrenheit(celsius):
-    return celsius * 1.8 + 32
+    return round(celsius * 1.8 + 32, 1)
 
 
 def main():
