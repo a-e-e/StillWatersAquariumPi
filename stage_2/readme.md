@@ -28,6 +28,7 @@ The temperature sensor has 3 wires: Blue (GND), Orange (3.3V), Yellow (Data).
 <img src="resources/images/IMG_3020.jpeg" height=400>
 <img src="resources/images/IMG_3024.jpeg" height=400>
 <img src="resources/images/IMG_3025.jpeg" height=400>
+
 - Connect the blue wire to GND.  
 - Connect the red wire to 3.3V.  
 - Connect a breadboard row with the yellow wire and GPIO 4.  
