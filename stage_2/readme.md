@@ -8,10 +8,10 @@ Stage 2 builds on the breadboard created from stage 1.
 
 We will need the following:
 - Everything from stage 1
-- DS18B20 Waterproof temperature sensor
+- DS18B20 Waterproof temperature sensor https://www.adafruit.com/product/381
 - 4.7k ohm resistor (included with temperature sensor)
 - Electrical Tape
-https://www.adafruit.com/product/381
+
 
 ## Enable 1 wire interface
 https://www.raspberrypi-spy.co.uk/2018/02/enable-1-wire-interface-raspberry-pi/
