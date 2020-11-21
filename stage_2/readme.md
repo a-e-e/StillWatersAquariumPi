@@ -3,7 +3,7 @@
 Referencing https://docs.micropython.org/en/latest/esp8266/tutorial/onewire.html
 
 # To get started
-Stage 2 builds off of staging 1.
+Stage 2 builds on the breadboard created from stage 1.
 
 We will need the following:
 - Everything from stage 1
@@ -15,7 +15,7 @@ https://www.adafruit.com/product/381
 ## Enable 1 wire interface
 https://www.raspberrypi-spy.co.uk/2018/02/enable-1-wire-interface-raspberry-pi/
 
-Unlike the analog water level sensor, the DS18B20 has a built in Analog to Digital converter and features a Dallas 1-wire connection. This allows us to skip the MCP3008 ADC we used for the water level senor.
+Unlike the analog water level sensor, the DS18B20 has a built in Analog to Digital converter, featuring a Dallas 1-wire connection. This allows us to skip the MCP3008 ADC required for the water level sensor.
 
 ## Install required library
 - `sudo pip3 install w1thermsensor`
