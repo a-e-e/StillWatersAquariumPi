@@ -8,6 +8,7 @@ Stage 2 builds off of staging 1.
 We will need the following:
 - Everything from stage 1
 - DS18B20 Waterproof temperature sensor
+- 4.7k ohm resistor (included with temperature sensor)
 - Electrical Tape
 https://www.adafruit.com/product/381
 
