@@ -31,6 +31,9 @@ The temperature sensor has 3 wires: Blue (GND), Orange (3.3V), Yellow (Data).
 - Connect the red wire to 3.3V
 - Connect the yellow wire to GPIO 4 with the 4.7k ohm resistor inbetween it that is connected to 3.3V
 <img src="resources/images/wiring.png" height=400>
+<img src="resources/images/wiring.jpeg" height=400>
+<img src="resources/images/wiring_close.jpeg" height=400>
+
 # Running code
 
 - Open Thornny Python IDE
