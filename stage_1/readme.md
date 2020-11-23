@@ -115,6 +115,6 @@ Traceback (most recent call last):
 AttributeError: module 'board' has no attribute 'SCK'
 ```
 - A wrong 'board' package has been installed. Force a reinstall of Blinka library.
-```sudo python3 -m pip install --upgrade --force-reinstall adafruit-blinka Adafruit-PlatformDetect```
+```pip3 install --upgrade --force-reinstall adafruit-blinka Adafruit-PlatformDetect```
 
  
