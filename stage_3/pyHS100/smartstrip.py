@@ -3,7 +3,7 @@ import logging
 from typing import Any, Dict, Optional, Union
 from deprecation import deprecated
 
-from pyHS100 import SmartPlug, SmartDeviceException, EmeterStatus, DeviceType
+from . import SmartPlug, SmartDeviceException, EmeterStatus, DeviceType
 from .protocol import TPLinkSmartHomeProtocol
 
 _LOGGER = logging.getLogger(__name__)

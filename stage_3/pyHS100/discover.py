@@ -3,7 +3,7 @@ import logging
 import json
 from typing import Dict, Type, Optional
 
-from pyHS100 import (
+from . import (
     TPLinkSmartHomeProtocol,
     SmartDevice,
     SmartPlug,
