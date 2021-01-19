@@ -22,6 +22,7 @@ https://www.amazon.com/dp/B01KBFWW0O/ref=dp_iou_view_product?ie=UTF8&psc=1
 # Running code
 
 - Open Thornny Python IDE
-- Load -> Code/StillWatersAquariumPi/stage_2/print_water_level_and_temperature.py
+- Load -> Code/StillWatersAquariumPi/stage_3/discover_smart_plugs.py
+- Load -> Code/StillWatersAquariumPi/stage_3/print_water_level_and_temperature.py
 - Click 'Run'
 <img src="resources/images/output_example.png" height=100>
