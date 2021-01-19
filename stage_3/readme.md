@@ -14,6 +14,8 @@ https://www.amazon.com/dp/B01KBFWW0O/ref=dp_iou_view_product?ie=UTF8&psc=1
 
 ## Connect smart plug to wall and set up using KASA app
 - Ask your network administrator
+https://apps.apple.com/us/app/kasa-smart/id1034035493  
+https://play.google.com/store/apps/details?id=com.tplink.kasa_android&hl=en_US&gl=US
 - Name each plug to be memorable e.g. pump_1, heater_1, etc
 - Connect pump and aquarium heater to smart plug
 
