@@ -5,7 +5,7 @@ import time
 import adafruit_mcp3xxx.mcp3008 as MCP
 from adafruit_mcp3xxx.analog_in import AnalogIn
 from w1thermsensor import W1ThermSensor
-from .pyHS100 import SmartPlug
+from stage_3.pyHS100 import SmartPlug
 
 VOLTAGE_AT_2_INCH = 2.41
 VOLTAGE_AT_6_INCH = 2.04
