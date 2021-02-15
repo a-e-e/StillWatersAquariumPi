@@ -87,6 +87,8 @@ def main():
             pump.turn_on()
         else:
             pump.turn_off()
+            
+        print("HI!")
         time.sleep(1)
 
 
