@@ -7,6 +7,7 @@ def main():
     :return:
     """
     print("Blue") 
+    print("gel")
 
 if __name__ == '__main__':
     main()
