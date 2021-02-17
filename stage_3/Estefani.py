@@ -8,6 +8,7 @@ def main():
     """
     print("Blue") 
     print("gel")
+    print("boo!")
 
 if __name__ == '__main__':
     main()
