@@ -6,7 +6,7 @@ def main():
     Esatefani's test function
     :return:
     """
-   print("Blue") 
+    print("Blue") 
 
 if __name__ == '__main__':
     main()
