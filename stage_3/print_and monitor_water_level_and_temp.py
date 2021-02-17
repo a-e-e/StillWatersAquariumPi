@@ -5,7 +5,7 @@ import time
 import adafruit_mcp3xxx.mcp3008 as MCP
 from adafruit_mcp3xxx.analog_in import AnalogIn
 from w1thermsensor import W1ThermSensor
-from stage_3.pyHS100 import SmartPlug
+from pyHS100 import SmartPlug
 
 VOLTAGE_AT_2_INCH = 2.41
 VOLTAGE_AT_6_INCH = 2.04
@@ -79,13 +79,17 @@ def main():
         print("\n")
 
         if temperature < HEATER_CUTOFF_CELSIUS:
+            print("Turning heater on")
             heater.turn_on()
         else:
+            print("Turning heater off")
             heater.turn_off()
 
         if water_level < PUMP_CUTOFF_INCHES:
+            print("Turning pump on")
             pump.turn_on()
         else:
+            print("Turning pump off")
             pump.turn_off()
         time.sleep(1)
 

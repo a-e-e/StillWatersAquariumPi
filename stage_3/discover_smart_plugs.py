@@ -1,4 +1,4 @@
-from stage_3.pyHS100 import Discover
+from pyHS100 import Discover
 
 
 def main():
