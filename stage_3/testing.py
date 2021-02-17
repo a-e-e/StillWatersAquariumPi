@@ -1,4 +1,4 @@
-def Painting:
+def main():
     """
     steps to painting house
     :return:
@@ -7,4 +7,4 @@ def Painting:
     
 
 if __name__ == '__main__':
-    Painting
+    main()
