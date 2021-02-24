@@ -88,7 +88,7 @@ Change directory into the newly created Code folder
 `cd Code`
 
 Clone repository  
-`git clone https://github.com/simonyjung/StillWatersAquariumPi.git`
+`git clone https://github.com/a-e-e/StillWatersAquariumPi.git`
 
 Change directory into newly cloned repository  
 `cd StillWatersAquariumPi`
