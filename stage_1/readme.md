@@ -104,7 +104,7 @@ Install dependencies.
 
 
 # Calibration
-- Get etape and out it at 2 in note down the voltage then bring the etape up to 6 in and do the same thing.
+- Get etape and put it at 2 in note down the voltage then bring the etape up to 6 in and do the same thing.
 - Input voltage in lines 9 & 10 of print_water_level.py under `VOLTAGE_AT_2_INCH` and `VOLTAGE_AT_6_INCH`
 
 
